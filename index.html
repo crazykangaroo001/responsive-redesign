@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+      </head>
+<body>
+<div class="App">
+      <h1>Responsive Redesign</h1>
+      <div class="section">
+        <a href="https://www.nws.noaa.gov/climate.php/">
+          <h2>Selected Website</h2>
+        </a>
+        <p id="web-decision">
+          I chose this website because it provides climate data sources at the
+          National Weather Services that are crucial to studying climate change
+          and determining future environmental expectations.
+        </p>
+        <img src="./resources/web.png"></img>
+      </div>
+      <hr></hr>
+      <div class="section">
+        <h2>Part 1: Identifying Usability Problems</h2>
+        <div class="probs">
+          <div class="col">
+            <h3>Usability</h3>
+            <ul>
+              <li>Not mobile responsive</li>
+              <ul>
+                <li>Font size stays the same</li>
+                <li>Windows don’t resize</li>
+              </ul>
+              <li>Misalignment in side menu</li>
+              <ul>
+                <li>
+                  The search and caption above the search field are centered,
+                  while the rest of the menu is left-aligned
+                </li>
+              </ul>
+              <li>Each menu option links to a different page</li>
+              <li>Too many options in side menu, too crowded</li>
+              <li>Ineffective use of space + poor alignment</li>
+              <li>
+                Sidebar menu is cut off or the text has to wrap around, making
+                it difficult to read
+              </li>
+              <li>Font sizes are the same</li>
+              <li>No clear indicator of the title vs text / page section</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Learnability</h3>
+            <ul>
+              <li>Inconsistency in menu font colors</li>
+              <ul>
+                <li>There’s tan text as well as white text</li>
+              </ul>
+              <li>No clear way to find help</li>
+              <li>Unclear that the icons are clickable</li>
+              <li>Side menu and top menu conflict in their use</li>
+              <ul>
+                <li>
+                  Not sure how they differentiate in their use + priorities
+                </li>
+              </ul>
+              <li>Inconsistency in nav bar and footer styling</li>
+              <li>Inconsistency in link colors</li>
+              <ul>
+                <li>
+                  There are links in tan, blue, white, and gray that change to
+                  different colors when hovered over
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Memorability</h3>
+            <ul>
+              <li>Search failure for local forecast by “City, St”</li>
+              <ul>
+                <li>Relies on recall instead of intuition</li>
+                <li>Specific formatting for input to search field</li>
+              </ul>
+              <li>Abbreviations are hard to understand</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Conceptual Model</h3>
+            <ul>
+              <li>Organization of side menu is confusing</li>
+              <ul>
+                <li>The search bar is weirdly placed at the top</li>
+                <li>
+                  Unconventional order of menu items Sign up link is usually at
+                  the bottom along with contact us)
+                </li>
+              </ul>
+              <li>
+                Lack of information conveyed through menu items (need drop down)
+              </li>
+              <li>Lack of information about data records displayed</li>
+              <li>Fake links (tan colored headers)</li>
+              <ul>
+                <li>Text Bulletins</li>
+                <li>Climate</li>
+              </ul>
+              <li>Broken links (404s)</li>
+              <li>Ambiguous nav bar item titles</li>
+            </ul>
+          </div>
+          <div id="access" class="col">
+            <h3>Accessibility</h3>
+            <ul>
+              <li>No page regions or ARIA landmarks were found.</li>
+              <li>Low contrast in menu (disagree - the white on blue)</li>
+              <li>
+                Missing first level heading - A page does not have a first level
+                heading
+              </li>
+              <li>Empty form label</li>
+              <li>X Language missing or invalid</li>
+              <li>Very small text in footer</li>
+              <li>
+                Many picture for aesthetic purposes that are missing alternative
+                text
+              </li>
+            </ul>
+            <p>
+              Overall, there seemed to be a problem with the organization of the
+              page which raised many accessibility issues. This issue is
+              especially apparent in the layout of the horizontal navigation bar
+              and the side menu. The one problem I disagreed with is the low
+              contrast in the navigation bar with white text on a dark blue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr></hr>
+      <div class="section">
+        <h2>Part 2: Visual Redesign</h2>
+        <div class="viz">
+          <h3>Low-fidelity Wireframing</h3>
+          <div class="low">
+            <img src="./resources/w1.png"></img>
+            <img src=./resources/w2.png></img>
+            <img src=./resources/w3.png></img>
+          </div>
+          <b>Annotations</b>
+          <ol id="annotations">
+            <li>
+              Concise menu bar with fewer elements by combining sidebar with top
+              menu, grouped items
+            </li>
+            <li>
+              A single clear, interactable menu centered, with search option at
+              the end
+            </li>
+            <li>Sectioned off page region centered, with large heading</li>
+            <li>
+              Interactive cards with data sources and a description for each
+            </li>
+            <li>Help button with navigation instructions</li>
+          </ol>
+        </div>
+        <div class="viz">
+          <h3>Visual Design Style Guide</h3>
+          <div class="high">
+            <b>Color Palette</b>
+            <img src="./resources/palette.png"/>
+          </div>
+          <div class="high">
+            <b>Typography / Icons</b>
+            <img src="./resources/icons.png"/>
+          </div>
+          <div class="high">
+            <b>Interactive Components</b>
+            <img src="./resources/comp.png"/>
+          </div>
+        </div>
+        <div class="viz">
+          <h3>High-fidelity Wireframing</h3>
+          <div class="high">
+            <b>Desktop Prototype</b>
+            <img src="./resources/desktop.png" />
+          </div>
+          <div class="high">
+            <b>Tablet Prototype</b>
+            <img src="./resources/ipad.png" />
+          </div>
+          <div class="high">
+            <b>Mobile Prototype</b>
+            <img src="./resources/phone.png" />
+          </div>
+        </div>
+        <hr></hr>
+        <div class="section">
+          <h2>Part 3: Responsive Redesign</h2>
+          <a>
+            <h3>Redesigned Website</h3>
+          </a>
+          <p id="web-decision">
+            Between the high fidelity prototypes and actual website redesign, I
+            changed a few aspects of the design to clarify the role of certain
+            elements, such as removing the underlining of nav bar items and
+            adding a downwards carrot next to it to indicate a dropdown.
+          </p>
+          <img id="screen" src="./resources/screen.png" />
+        </div>
+      </div>
+    </div>
+</body>
+</html>
